@@ -247,20 +247,11 @@
         let headX = snakeBody[0][0],
             headY = snakeBody[0][1];
         switch (direction) {
-            case "left":
-                headX -= unitSize;
-                break;
-            case "right":
-                headX += unitSize;
-                break;
-            case "top":
-                headY -= unitSize;
-                break;
-            case "dowm":
-                headX += unitSize;
-                break;
-            default:
-                break;
+            case "left":headX -= unitSize;break;
+            case "right":headX += unitSize;break;
+            case "top":headY -= unitSize;break;
+            case "dowm": headX += unitSize;break;
+            default:break;
         }
         return [headX, headY]
     }
